@@ -19,6 +19,8 @@ Grassはλ計算をベースにした関数型プログラミング言語です.
 
 他Grassについては上記の公式ページとかここら辺を参照.
 
+.. more::
+
 - `プログラミング言語/Grass - プログラミングスレまとめ in VIP <http://vipprog.net/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E/Grass.html>`_
 - `うはｗｗｗ Mosh で Grass 実装したｗｗｗｗ - Higepon’s blog - Mona OS and Mosh <http://d.hatena.ne.jp/higepon/20080605/1212678422>`_
 

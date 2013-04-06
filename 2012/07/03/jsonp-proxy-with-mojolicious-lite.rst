@@ -13,6 +13,8 @@ JSONP Proxy with Mojolicious Lite
 
 XMLで返ってくるレスポンスをJSON/JSONPの形式に直すためのものです。
 
+.. more::
+
 .. raw:: html
 
     <script src="https://gist.github.com/choplin/3038327.js"></script>

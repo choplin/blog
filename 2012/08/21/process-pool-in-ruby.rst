@@ -14,6 +14,9 @@ Summary
 
 RubyでProcess Poolを簡単に作れるクラスを書いてみました。Ruby歴は浅いのでアホな書き方をしているかもしれません。ツッコミ歓迎。
 
+.. more::
+
+
 Motivation
 ==========
 

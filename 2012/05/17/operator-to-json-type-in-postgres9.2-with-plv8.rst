@@ -18,6 +18,8 @@ Pg9.2
 
 `PostgreSQL: Documentation: Manuals: JSON Type <http://www.postgresql.org/docs/devel/static/datatype-json.html>`_
 
+.. more::
+
 JSON型で何ができるの？
 ======================
 

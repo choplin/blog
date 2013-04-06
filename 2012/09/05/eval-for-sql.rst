@@ -14,6 +14,8 @@ eval for SQL
 
 postgresならできます
 
+.. more::
+
 .. code-block:: postgres
 
     CREATE FUNCTION eval(sql Text) RETURNS SETOF Record AS $$

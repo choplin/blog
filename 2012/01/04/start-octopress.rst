@@ -20,6 +20,8 @@ octopress!
 `はてな記法 <http://hatenadiary.g.hatena.ne.jp/keyword/%E3%81%AF%E3%81%A6%E3%81%AA%E8%A8%98%E6%B3%95%E4%B8%80%E8%A6%A7>`_ をいつまで経っても覚えられないので、最近話題のOctopress + github pagesを試してみます。
 しばらく使ってみてよさそうならはてなダイアリーから移ろうかなと。
 
+.. more::
+
 ---------------------
 
 インストールとか

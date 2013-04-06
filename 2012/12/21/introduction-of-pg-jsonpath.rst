@@ -26,6 +26,8 @@ PostgreSQLには9.2からJSON型が導入されました。JSON型が提供す�
 * ROW型 配列型からのjson文字列の構築
     * `JSON関数 <http://www.postgresql.jp/document/9.2/html/functions-json.html>`_
 
+.. more::
+
 ****************
 非構造化データ型
 ****************

@@ -19,6 +19,8 @@ Inverse FizzBuzzについてはこちらを参照 `逆FizzBuzz問題 (Inverse Fi
 
 にわかHaskellerですが、Haskellで書いてみたので誰かが添削してくれることを願って残しておきます
 
+.. more::
+
 .. raw:: html
 
     <script src="https://gist.github.com/choplin/2709561.js"></script>

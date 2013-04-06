@@ -32,6 +32,8 @@ imgタグになります
 
 この場合 `{octopress_path}/sources/images/blog/test.jpg` に画像を置いておけばオッケーです。
 
+.. more::
+
 Why
 ===
 
