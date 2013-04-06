@@ -5,8 +5,8 @@ eval for SQL
 
 
 .. author:: default
-.. categories:: PostgreSQL, SQL
-.. tags:: none
+.. categories:: Programming
+.. tags:: PostgreSQL, SQL
 .. comments::
 
 <blockquote class="twitter-tweet" lang="ja"><p>evalあるSQL処理系ないのかな</p>&mdash; トデス子さん (@todesking) <a href="https://twitter.com/todesking/status/243294372643344384" data-datetime="2012-09-05T10:27:53+00:00">9月 5, 2012</a></blockquote>

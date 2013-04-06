@@ -5,8 +5,8 @@ Haxeをhomebrewでインストールする方法
 
 
 .. author:: default
-.. categories:: Haxe, Mac
-.. tags:: none
+.. categories:: Programming
+.. tags:: Haxe, Mac
 .. comments::
 
 Intro

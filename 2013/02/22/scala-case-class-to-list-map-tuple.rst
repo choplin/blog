@@ -5,9 +5,8 @@ case classとList/Map/Tupleの相互変換
 
 
 .. author:: default
-.. categories:: Scala
-
-.. tags:: none
+.. categories:: Programming
+.. tags:: Scala
 .. comments::
 
 case classとコレクションを相互変換したいことがたまにあるので方法をまとめておきます。

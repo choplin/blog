@@ -5,9 +5,8 @@ Octopressで設定したディレクトリの画像を表示するプラグイ�
 
 
 .. author:: default
-.. categories:: Octopress
-
-.. tags:: none
+.. categories:: Programming
+.. tags:: Octopress
 .. comments::
 
 HowTo

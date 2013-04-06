@@ -5,8 +5,8 @@ hive.mergeにおけるSTOREと圧縮の問題とワークアラウンド
 
 
 .. author:: default
-.. categories:: hadoop, hive
-.. tags:: none
+.. categories:: Programming
+.. tags:: Hadoop, Hive
 .. comments::
 
 ****

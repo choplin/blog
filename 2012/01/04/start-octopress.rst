@@ -4,8 +4,8 @@ github pages + octopressはじめました
 
 
 .. author:: default
-.. categories:: Octopress
-.. tags:: none
+.. categories:: Programming
+.. tags:: Octopress
 .. comments::
 
 octopress!

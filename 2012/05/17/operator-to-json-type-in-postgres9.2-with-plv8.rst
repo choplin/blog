@@ -5,8 +5,8 @@ Operator to JSON type in PG9.2 with plv8
 
 
 .. author:: default
-.. categories:: DB, PostgreSQL, JavaScript
-.. tags:: none
+.. categories:: Programming
+.. tags:: DB, PostgreSQL, JavaScript
 .. comments::
 
 Pg9.2

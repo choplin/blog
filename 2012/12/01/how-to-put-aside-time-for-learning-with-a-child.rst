@@ -5,8 +5,8 @@
 
 
 .. author:: default
-.. categories:: family, childrenac
-.. tags:: none
+.. categories:: Family
+.. tags:: childrenac, Advent Calendar
 .. comments::
 
 ********

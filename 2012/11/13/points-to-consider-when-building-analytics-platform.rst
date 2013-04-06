@@ -5,9 +5,8 @@
 
 
 .. author:: default
-.. categories:: essay
-
-.. tags:: none
+.. categories:: Programming
+.. tags:: Essay, Data Analytics
 .. comments::
 
 ****

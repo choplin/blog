@@ -5,9 +5,8 @@ Octopressで下書きをプレビューする方法
 
 
 .. author:: default
-.. categories:: Octopress
-
-.. tags:: none
+.. categories:: Programming
+.. tags:: Octopress
 .. comments::
 
 Motivation

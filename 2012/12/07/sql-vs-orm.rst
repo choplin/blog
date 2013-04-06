@@ -5,8 +5,8 @@ SQLのいい点（ORMと比較して）
 
 
 .. author:: default
-.. categories:: SQL
-.. tags:: none
+.. categories:: Programming
+.. tags:: SQL
 .. comments::
 
 `SQL上級者こそ知って欲しい、なぜO/Rマッパーが重要か？ <http://www.slideshare.net/kwatch/sqlor>`_ を受けて。

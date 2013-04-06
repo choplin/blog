@@ -5,8 +5,8 @@ Haskell Day 2012に行ってきました
 
 
 .. author:: default
-.. categories:: Haskell, Event
-.. tags:: none
+.. categories:: Programming
+.. tags:: Haskell, Event
 .. comments::
 
 Haskell Day 2012

@@ -5,8 +5,8 @@ Window関数 - 導入編
 
 
 .. author:: default
-.. categories:: PostgreSQL
-.. tags:: none
+.. categories:: Programming
+.. tags:: PostgreSQL, Advent Calendar
 .. comments::
 
 ********

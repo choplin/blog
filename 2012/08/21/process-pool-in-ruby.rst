@@ -5,9 +5,8 @@ RubyでProcess Pool
 
 
 .. author:: default
-.. categories:: Ruby
-
-.. tags:: none
+.. categories:: Programming
+.. tags:: Ruby
 .. comments::
 
 Summary

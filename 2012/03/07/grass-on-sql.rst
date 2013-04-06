@@ -5,8 +5,8 @@ Grass on SQL
 
 
 .. author:: default
-.. categories:: PostgreSQL, SQL, Esoteric
-.. tags:: none
+.. categories:: Programming
+.. tags:: PostgreSQL, SQL, Esoteric
 .. comments::
 
 ********

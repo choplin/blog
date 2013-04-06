@@ -5,9 +5,8 @@ Inverse FizzBuzz with Haskell
 
 
 .. author:: default
-.. categories:: Haskell
-
-.. tags:: none
+.. categories:: Programming
+.. tags:: Haskell
 .. comments::
 
 Inverse FizzBuzz

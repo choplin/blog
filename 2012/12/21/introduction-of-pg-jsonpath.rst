@@ -5,8 +5,8 @@ pg-jsonpathを書いた
 
 
 .. author:: default
-.. categories:: PostgreSQL
-.. tags:: none
+.. categories:: Programming
+.. tags:: PostgreSQL
 .. comments::
 
 ********

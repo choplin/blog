@@ -5,9 +5,8 @@ JSONP Proxy with Mojolicious Lite
 
 
 .. author:: default
-.. categories:: Perl
-
-.. tags:: none
+.. categories:: Programming
+.. tags:: Perl
 .. comments::
 
 書き捨てスクリプトを整理していたら昔書いたやつが出てきたので晒しておきます。

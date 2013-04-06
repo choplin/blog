@@ -5,8 +5,8 @@ Scalaで型クラス入門
 
 
 .. author:: default
-.. categories:: Scala, Functional Programming
-.. tags:: none
+.. categories:: Programming
+.. tags:: Scala, Functional Programming
 .. comments::
 
 型クラスについてつらつら考えていたことをまとめておきます。マサカリ歓迎。

@@ -5,8 +5,8 @@ Impala Q&A
 
 
 .. author:: default
-.. categories:: Hadoop, Impala
-.. tags:: none
+.. categories:: Programming
+.. tags:: Hadoop, Impala
 .. comments::
 
 2012/11/7に開催された `Cloudera World Tokyo <http://www.cloudera.co.jp/jpevents/cloudera-world-tokyo/>`_ に参加してきました。
