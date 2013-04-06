@@ -13,6 +13,9 @@ project = u'still deeper'
 # Change this to the tagline of your blog
 tagline = ''
 
+# Change this to the description of your blog
+description = ''
+
 # Change this to your name
 author = 'choplin'
 
