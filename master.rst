@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2013/04/13/go_tour_exercise_solutions
    2013/02/22/scala-case-class-to-list-map-tuple
    2012/12/21/introduction-of-pg-jsonpath
    2012/12/07/sql-vs-orm
