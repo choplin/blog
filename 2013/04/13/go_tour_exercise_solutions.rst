@@ -184,3 +184,169 @@ Goらしくかけているかは分からないのでコメント歓迎です
         fmt.Println(Sqrt(2))
         fmt.Println(Sqrt(-2))
     }
+
+*****************
+#57 HTTP Handlers
+*****************
+
+::
+
+    package main
+
+    import (
+        "fmt"
+        "net/http"
+    )
+
+    type String string
+
+    type Struct struct {
+        Greeting string
+        Punct    string
+        Who      string
+    }
+
+    func (str String) ServeHTTP(
+        w http.ResponseWriter,
+        r *http.Request) {
+        fmt.Fprintf(w, "%s", str)
+    }
+
+    func (str *Struct) ServeHTTP(
+        w http.ResponseWriter,
+        r *http.Request) {
+        fmt.Fprintf(w, "%s%s%s", str.Greeting, str.Punct, str.Who)
+    }
+
+    func main() {
+        http.Handle("/string", String("I'm a frayed knot."))
+        http.Handle("/struct", &Struct{"Hello", ":", "Gophers!"})
+        http.ListenAndServe("localhost:4000", nil)
+    }
+
+**********
+#59 Images
+**********
+
+::
+
+    package main
+
+    import (
+        "code.google.com/p/go-tour/pic"
+        "image"
+        "image/color"
+    )
+
+    type Image struct{
+        w, h int
+    }
+
+    func (r *Image) Bounds() image.Rectangle {
+        return image.Rect(0, 0, r.w, r.h)
+    }
+
+    func (r *Image) ColorModel() color.Model {
+        return color.RGBAModel
+    }
+
+    func (r *Image) At(x, y int) color.Color {
+        return color.RGBA{uint8(x), uint8(y), 255, 255}
+    }
+
+    func main() {
+        m := &Image{256, 256}
+        pic.ShowImage(m)
+    }
+
+****************
+#60 Rot13 Reader
+****************
+
+::
+
+    package main
+
+    import (
+        "io"
+        "os"
+        "strings"
+    )
+
+    type rot13Reader struct {
+        r io.Reader
+    }
+
+    func (rot *rot13Reader) Read(p []byte) (n int, err error) {
+        n, err = rot.r.Read(p)
+        for i := 0; i < len(p); i++ {
+            if (p[i] >= 'A' && p[i] < 'N') || (p[i] >='a' && p[i] < 'n') {
+                p[i] += 13
+            } (p[i] > 'M' && p[i] <= 'Z') || (p[i] > 'm' && p[i] <= 'z'){
+                p[i] -= 13
+            }
+        }
+        return
+    }
+
+    func main() {
+        s := strings.NewReader(
+            "Lbh penpxrq gur pbqr!")
+        r := rot13Reader{s}
+        io.Copy(os.Stdout, &r)
+    }
+
+***************************
+#68 Equivalent Binary Trees
+***************************
+
+::
+
+    package main
+
+    import (
+        "fmt"
+        "code.google.com/p/go-tour/tree"
+    )
+
+    func Walk(t *tree.Tree, c chan int) {
+        if t != nil {
+            _walk(t, c)
+        }
+        close(c)
+    }
+
+    func _walk(t *tree.Tree, c chan int) {
+        if t != nil {
+            _walk(t.Left, c)
+            c <- t.Value
+            _walk(t.Right, c)
+        }
+    }
+
+    func Same(t1, t2 *tree.Tree) bool {
+        c1 := make(chan int)
+        c2 := make(chan int)
+
+        go Walk(t1, c1)
+        go Walk(t2, c2)
+
+        for v1 := range c1 {
+            v2 := <- c2
+            if v1 != v2 {
+                return false
+            }
+        }
+
+        _, ok := <- c2
+        if ok {
+            return false
+        }
+
+        return true
+    }
+
+    func main() {
+        fmt.Println(Same(tree.New(1), tree.New(1)))
+        fmt.Println(Same(tree.New(1), tree.New(2)))
+    }
