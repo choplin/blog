@@ -30,7 +30,7 @@ Goらしくかけているかは分からないのでコメント歓迎です
 
     func Sqrt(x float64) float64 {
         z := 1.0
-        for diff := 1.0; math.Abs(diff) > 0.00000001; {
+        for diff := 1.0; math.Abs(diff) > 1e-10; {
             diff = ((math.Pow(z, 2) - x) / (2.0 * x))
             z = z - diff
         }
@@ -136,7 +136,7 @@ Goらしくかけているかは分からないのでコメント歓迎です
 
     func Cbrt(x complex128) complex128 {
         z := complex128(1.0)
-        for diff := complex128(1.0); cmplx.Abs(diff) > 1e-17; {
+        for diff := complex128(1.0); cmplx.Abs(diff) > 1e-10; {
             diff = (cmplx.Pow(z, 3) - x) / (3 * cmplx.Pow(z, 2))
             z -= diff
         }
@@ -172,12 +172,12 @@ Goらしくかけているかは分からないのでコメント歓迎です
             return 0, ErrNegativeSqrt(x)
         }
 
-        r := 1.0
-        for diff := 1.0; math.Abs(diff) > 0.00000001; {
-            diff = ((math.Pow(r, 2) - x) / (2.0 * x))
-            r = r - diff
+        z := 1.0
+        for diff := 1.0; math.Abs(diff) > 1e-10; {
+            diff = ((math.Pow(z, 2) - x) / (2.0 * x))
+            z = z - diff
         }
-        return r, nil
+        return z, nil
     }
 
     func main() {
