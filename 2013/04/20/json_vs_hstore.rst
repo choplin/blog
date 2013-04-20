@@ -73,10 +73,30 @@ hstoreの有効化
         generate_series(1,1000000)
     ;
 
+演算子
+======
+
+計測する演算子はjsonにもhstoreにも用意されている `->` を使います。
+キーを渡して値を取り出しものです。
+
+.. code-block:: none
+
+   postgres=# select v->'fuga' from json_tbl limit 1;
+    ?column?
+   ----------
+    2
+   (1 row)
+
+   postgres=# select v->'fuga' from hstore_tbl limit 1;
+    ?column?
+   ----------
+    2
+   (1 row)
+
+簡単ですね。
+
 計測
 ====
-
-演算子は `->` を使います。キーを渡して値を取り出します。
 
 .. code-block:: none
 
