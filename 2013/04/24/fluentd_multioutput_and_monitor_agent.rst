@@ -122,7 +122,38 @@ http経由で、各pluginの内部の状態を取得することができるよ�
 
 つまり、内部で別のpluginを立ち上げる場合は、 `MultiOutput` を継承し、 `outputs` を外部から参照できる形にしておけば、 `monitor_agent` で子pluginの状態を見ることができるようになります。
 
-`config-expander` についてはパッチを書いたので参考にしてください。
+`config-expander` についてはパッチを書いた（pullreq/release済み）なので参考にしてください。
+
+.. code-block:: diff
+
+    diff --git a/lib/fluent/plugin/out_config_expander.rb b/lib/fluent/plugin/out_config_expander.rbindex a5357b6..c040da0 100644
+    --- a/lib/fluent/plugin/out_config_expander.rb
+    +++ b/lib/fluent/plugin/out_config_expander.rb
+    @@ -1,6 +1,6 @@
+     require_relative 'expander'
+
+    -class Fluent::ConfigExpanderOutput < Fluent::Output
+    +class Fluent::ConfigExpanderOutput < Fluent::MultiOutput
+       Fluent::Plugin.register_output('config_expander', self)
+
+       config_param :hostname, :string, :default => `hostname`.chomp
+    @@ -22,6 +22,8 @@ class Fluent::ConfigExpanderOutput < Fluent::Output
+         ex
+       end
+
+    +  attr_reader :outputs
+    +
+       def configure(conf)
+         super
+
+    @@ -33,6 +35,8 @@ class Fluent::ConfigExpanderOutput < Fluent::Output
+         @plugin = Fluent::Plugin.new_output(ex['type'])
+         @plugin.configure(ex)
+
+    +    @outputs = [@plugin]
+    +
+         mark_used(configs.first)
+       end
 
 ******
 まとめ
