@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2013/04/24/fluentd_multioutput_and_monitor_agent
    2013/04/20/json_vs_hstore
    2013/04/13/go_tour_exercise_solutions
    2013/02/22/scala-case-class-to-list-map-tuple
