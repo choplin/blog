@@ -69,7 +69,8 @@ fluent-plugin-tail-multilineはtailに組み込みのパーサーは利用でき
 
       format_firstline /^\d{4}-\d{2}-\d{2}/
 
-      format /^(?<time>[^,]*),"(?<user_name>.*)","(?<database_name>.*)",(?<process_id>[^,]*),"(?<connection_from>.*)",(?<session_id>[^,]*),(?<session_line_num>[^,]*),"(?<command_tag>.*)",(?<session_start_time>[^,]*),(?<virtual_transaction_id>[^,]*),(?<transaction_id>[^,]*),(?<error_severity>[^,]*),(?<sql_state_code>[^,]*),"(?<message>.*)",(?<detail>[^,]*),(?<hint>[^,]*),(?<internal_query>[^,]*),(?<internal_query_pos>[^,]*),(?<context>[^,]*),(?<query>[^,]*),(?<query_pos>[^,]*),(?<location>[^,]*),"(?<application_name>.*)"$/
+      format /^(?<time>[^",]*),"?(?<user_name>(?:[^"]|"")*)"?,"?(?<database_name>(?:[^"]|"")*)"?,(?<process_id>[^",]*),"?(?<connection_from>(?:[^"]|"")*)"?,(?<session_id>[^",]*),(?<session_line_num>[^",]*),"?(?<command_tag>(?:[^"]|"")*)"?,(?<session_start_time>[^",]*),(?<virtual_transaction_id>[^",]*),(?<transaction_id>[^",]*),(?<error_severity>[^",]*),(?<sql_state_code>[^",]*),"?(?<message>(?:[^"]|"")*)"?,(?<detail>[^",]*),"?(?<hint>(?:[^"]|"")*)"?,(?<internal_query>[^",]*),(?<internal_query_pos>[^",]*),(?<context>[^",]*),(?<query>[^",]*),(?<query_pos>[^",]*),(?<location>[^",]*),"?(?<application_name>(?:[^"]|"")*)"?$/
+      
     </source>
 
 
