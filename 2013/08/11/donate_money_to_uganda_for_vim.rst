@@ -11,6 +11,6 @@ vimに感謝の気持ちを伝える方法
 
 vim 7.4がリリースされたので感謝の気持ちを伝えましょう
 
-.. code::
+.. code-block:: none
 
    :help uganda
