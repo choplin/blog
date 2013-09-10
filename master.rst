@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2013/09/10/blogging_with_re_structured_text
    2013/08/11/donate_money_to_uganda_for_vim
    2013/06/07/postgresql_csv_log_with_fluentd
    2013/04/27/fluentd_internal_log
