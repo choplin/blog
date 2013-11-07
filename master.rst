@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2013/11/07/how_to_retrieve_tables_and_columns_with_postgres
    2013/09/10/blogging_with_re_structured_text
    2013/08/11/donate_money_to_uganda_for_vim
    2013/06/07/postgresql_csv_log_with_fluentd
