@@ -86,7 +86,7 @@ Scalaであればimplicit conversionを使うことで定義済みの型を拡�
     
     "foo".hoge //=> hoge
 
-Rich~で普段から使っていると使っていると思います。
+Rich~で普段から使っていると思います。
 
 これらの方法では型を拡張することはできますが、共通したインターフェースをまとめることは困難です。
 
@@ -129,7 +129,7 @@ IntとDoubleという既存の型に対して、型名の文字列を返す `who
 .. code-block:: haskell
 
     sayWho :: Who a => a -> IO()
-    sayWho x = who x
+    sayWho x = print $ who x
     
     main = do
       sayWho (1::Int)
@@ -188,7 +188,8 @@ Scalaでは型クラスの利用時に、 **implicit parameter** として明示
 * implicit object
 * 引数リストなしのimplict def
 
-が利用できます。（解説によって上記のいずれかをバラバラに利用していて混乱しますが、要はimplicit parameterとして渡せればいいのでどれでもいいです）
+が利用できます。
+（解説によって上記のいずれかをバラバラに利用していて混乱しますが、要はimplicit parameterとして渡せればいいのでどれでもいいです）
 
 1. 型クラスの定義をする際にパラメータ化した型に、インスタンスとして定義する型を当てはめながら、
 2. 値が
