@@ -6,7 +6,7 @@ SQL感覚でHiveQLを書くと痛い目にあう例
 
 .. author:: default
 .. categories:: Programming
-.. tags:: [Hadoop,Hive]
+.. tags:: Hadoop,Hive
 .. comments::
 
 .. highlight:: sql
