@@ -11,7 +11,7 @@ SQL感覚でHiveQLを書くと痛い目にあう例
 
 .. highlight:: sql
 
-[Hadoop Advent Calendar 2013](http://qiita.com/advent-calendar/2013/hadoop) 4日目の記事です
+`Hadoop Advent Calendar 2013 <http://qiita.com/advent-calendar/2013/hadoop>`_ 4日目の記事です
 
 *****
 tl;dr
