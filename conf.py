@@ -20,7 +20,7 @@ description = ''
 author = 'choplin'
 
 # Change this to your copyright string
-copyright = '2012, ' + author
+copyright = '2013, ' + author
 
 # Change this to your blog root URL (required for RSS feed)
 website = 'http://chopl.in/blog/'
