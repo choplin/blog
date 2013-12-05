@@ -21,6 +21,8 @@ tl;dr
 * 1 reducerは悪
 * data skewは悪
 
+.. more::
+
 ******
 前書き
 ******
