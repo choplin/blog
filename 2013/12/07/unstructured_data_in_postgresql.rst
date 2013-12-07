@@ -17,9 +17,9 @@ PostgreSQLで扱える半構造化データ型3種
 
 .. more::
 
-**************
+****************
 半構造化データ型
-**************
+****************
 
 厳密に定義はないと思うのですが、本エントリでは厳密な定義を持たずに、内部に配列やハッシュなどの構造と、値を持つようなデータを指すこととします。
 
@@ -54,7 +54,7 @@ XMLを扱う組み込みの関数が多く用意されています。
 
 特に、標準化されたXMLを操作する構文のXPathを扱う関数があるため、XML内の任意の値を取り出すことが簡単にできます。XPathが複数の値を返すように場合には配列を返してくれます。
 
-::
+.. code-block:: none
 
     SELECT xpath('//foo/bar/text()/', <foo><bar>hoge</bar><bar>fuga</bar></foo>'::xml);
 
@@ -73,7 +73,7 @@ hstore型はkey-valueのペアを扱う型です。組み込みではないの�
 
 `hstore <http://www.postgresql.jp/document/9.3/html/hstore.html>`_
 
-::
+.. code-block:: sh
 
     $ sudo yum install postgresql-contrib # 公式のリポジトリを利用している場合
     $ psql your_database -c 'CREATE EXTENSION hstore'
