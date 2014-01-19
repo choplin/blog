@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2014/01/19/chef_makes_me_tired
    2013/12/07/unstructured_data_in_postgresql
    2013/12/04/bad_hive_queries
    2013/11/07/how_to_retrieve_tables_and_columns_with_postgres
