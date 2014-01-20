@@ -71,3 +71,8 @@ in_forwardのイベントループはout_forwardの死活監視のheartbeat pack
 BuffereOutputに変える。Outputプラグインのまま回避するなら、ブロックしない処理に変えるか、out_forwardのheartbeatまわりのパラメータを調整すれば何とかなるかもしれません。
 
 特に通知系のプラグインでは通知の即時性を担保するためかOutputプラグインを用いているケースが多いようですが、この問題にはまりやすいように思うので気をつけて下さい。
+
+追記
+====
+
+@kazegusuri氏の `fluent-plugin-bufferize <https://github.com/sabottenda/fluent-plugin-bufferize>`_ を使うと、Outputプラグインはそのままでも、前段にbufferを挟むことができます。痒いところに手が届く素晴らしいプラグインですね。
