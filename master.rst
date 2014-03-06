@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2014/03/06/introduction_of_fluent_tail
    2014/01/19/user_bufferedoutput_for_blocking_plugin_instead_of_output
    2014/01/19/chef_makes_me_tired
    2013/12/07/unstructured_data_in_postgresql
