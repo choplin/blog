@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2014/07/28/fluent_plugin_event_sniffer
    2014/07/26/set_record_host_keys_to_false
    2014/03/06/introduction_of_fluent_tail
    2014/01/19/user_bufferedoutput_for_blocking_plugin_instead_of_output
