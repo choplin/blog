@@ -68,7 +68,7 @@ Paramiko record_host_keys=True
     sys     0m14.554s
 
 Paramiko record_host_keys=False
-------------------------------
+-------------------------------
 
 ::
 
