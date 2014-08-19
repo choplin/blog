@@ -18,17 +18,15 @@ tl;dr
 
 .. more::
 
-******
 前置き
-******
+======
 
 fluentdクラスタのあるノードにだけ、そのノードに送信しているout_forwardがdetachされ続けるという症状が出ました。
 
 調査したところ、外部への通知用に追加したhipchatプラグインを追加したところで症状が発生するようです。
 
-****
 原因
-****
+====
 
 BufferedOutputプラグインでの `write` メソッドでのスタックトレースはこんな風になります。
 
@@ -64,15 +62,14 @@ in_forwardのイベントループはout_forwardの死活監視のheartbeat pack
 
 実際に私の環境でhipchatプラグイン `emit` で行っている処理の時間を測ったところ、平均で0.7sec、たまに3secを超えてタイムアウトする、という状況でした。これ位の値だとOutputではダメで、BufferedOutputにすべきなのでしょう。
 
-********
 解決方法
-********
+========
 
 BuffereOutputに変える。Outputプラグインのまま回避するなら、ブロックしない処理に変えるか、out_forwardのheartbeatまわりのパラメータを調整すれば何とかなるかもしれません。
 
 特に通知系のプラグインでは通知の即時性を担保するためかOutputプラグインを用いているケースが多いようですが、この問題にはまりやすいように思うので気をつけて下さい。
 
 追記
-====
+----
 
 @kazegusuri氏の `fluent-plugin-bufferize <https://github.com/sabottenda/fluent-plugin-bufferize>`_ を使うと、Outputプラグインはそのままでも、前段にbufferを挟むことができます。痒いところに手が届く素晴らしいプラグインですね。

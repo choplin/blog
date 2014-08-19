@@ -9,8 +9,9 @@ fluent-plugin-event-snifferというプラグインを書いた
 .. tags:: fluentd
 .. comments::
 
+******
 tl;dr;
-======
+******
 
 fluetndに流れているイベントをWeb UI上で確認できる fluent-plugin-event-sniffer というプラグインを書いた。
 
@@ -31,4 +32,4 @@ https://github.com/choplin/fluent-plugin-event-sniffer
 
 .. raw:: html
 
-   <iframe width="640" height="480" src="//www.youtube.com/embed/_ykzeP2xGNg?rel=0" frameborder="0" allowfullscreen></iframe>
+   <iframe width="480" height="320" src="//www.youtube.com/embed/_ykzeP2xGNg?rel=0" frameborder="0" allowfullscreen></iframe>

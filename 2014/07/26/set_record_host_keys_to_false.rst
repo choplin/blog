@@ -9,8 +9,9 @@ RHEL6系でansibleを使うならrecord_host_keysをFalseにすると速くな�
 .. tags:: ansible
 .. comments::
 
+******
 tl;dr;
-======
+******
 
 タイトルの通り。RHEL6系なのでCentOS6、ScientificLinux6なども該当。
 
