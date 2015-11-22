@@ -1,0 +1,37 @@
+<div itemscope itemtype="http://schema.org/Blog">
+	{{ $prevYear := "" }}
+	{{ $pages := .Data.Pages }}
+	{{ range $index, $page := .Data.Pages }}
+		{{ if eq .Type "post" }}
+
+		{{ if eq $index 0 }}
+		<section class="archives"><h1 class="year">{{ dateFormat "2006" .Date }}</h1>
+		{{ else }}
+			{{ $prev := (sub $index 1) }}
+			{{ $prevYear := (index $pages $prev).Date | dateFormat "2006" }}
+			{{ $curYear := (dateFormat "2006" .Date) }}
+
+			{{ if ne $prevYear $curYear }}
+				</section>
+				<section class="archives"><h1 class="year">{{ dateFormat "2006" .Date }}</h1>
+			{{ end }}
+		{{ end }}
+
+		<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+			<div class="meta">
+				<div class="date"><time datetime='{{ dateFormat "Mon, Jan 2, 2006" .Date }}' itemprop="datePublished">{{ dateFormat "Mon, Jan 2, 2006" .Date }}</time></div>
+				<div class="categories">{{ partial "post/categories.html" . }}</div>
+				<div class="tags">{{ partial "post/tags.html" . }}</div>
+				{{ if and (and ($.Site.Params.disqus_short_name) (ne .Params.comments "false")) ($.Site.Params.disqus_show_comment_count) }}
+			    <div class="comments"><a href="{{ .Permalink }}#disqus_thread">Comments</a></div>
+			    {{ end }}
+			</div>
+			<div>
+				<h1 class="title" itemprop="name"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+			</div>
+		</article>
+
+		{{ end }}
+	{{ end }}
+	</section>
+</div>

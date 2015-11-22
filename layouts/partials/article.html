@@ -1,0 +1,9 @@
+<h1 class="title" itemprop="name">{{ if $.Site.Params.titlecase }}{{ .Title | title }}{{ else }}{{ .Title }}{{ end }}</h1>
+
+<div class="single-meta">
+  <span class="date"><time datetime='{{ .Date.Format "Mon, Jan 2, 2006" }}' data-updated="true" itemprop="datePublished">{{ .Date.Format "Mon, Jan 2, 2006" }}</time></span>
+  <span class="categories">{{ partial "post/categories.html" . }}</span>
+  <span class="tags">{{ partial "post/tags.html" . }}</span>
+</div>
+
+<div class="entry-content" itemprop="articleBody">{{ .Content }}</div>

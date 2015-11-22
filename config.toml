@@ -1,0 +1,30 @@
+baseurl = "http://chopl.in/"
+languageCode = "ja-JP"
+title = "still deeper"
+theme = "greyshade"
+canonifyurls = true
+
+[author]
+author = "Akihiro Okuno"
+
+[params]
+email_md5 = "8a820699dff43e6b707a488b592e7a21"
+
+subscribe_rss = "/index.xml"
+
+facebook_user = "okuno.akihiro"
+twitter_user = "choplin"
+github_user = "choplin"
+
+facebook_like = true
+twitter_tweet_button = true
+google_plus_one = true
+
+disqus_short_name = "choplinblog"
+disqus_show_comment_count = true
+
+google_analytics_tracking_id = "UA-17761815-3"
+
+highlightStyle = "tomorrow-night"
+
+tagline = "choplin's blog"

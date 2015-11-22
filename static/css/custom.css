@@ -1,0 +1,99 @@
+.post .meta .categories {
+    padding-left: 30px;
+    position: relative
+}
+
+.post .meta .categories:before {
+    color: #ccc;
+    font: 1.3em FontAwesome;
+    line-height: 1.6em;
+    position: absolute;
+    left: 0
+}
+
+@media screen and (max-width: 800px) {
+    .post .meta .categories {
+        display: inline-block;
+        vertical-align: middle;
+        *vertical-align: auto;
+        *zoom: 1;
+        *display: inline;
+        margin-right: 30px
+    }
+}
+
+.post .meta .categories:before {
+    content: "\f07b"
+}
+
+.archives article .meta .categories:before {
+    content: "\f07b"
+}
+
+.archives article .meta .date,
+.archives article .meta .tags,
+.archives article .meta .categories,
+.archives article .meta .comments
+ {
+    padding-left: 30px;
+    position: relative
+}
+
+.archives article .meta .date:before,
+.archives article .meta .tags:before,
+.archives article .meta .categories:before,
+.archives article .meta .comments:before
+{
+    color: #ccc;
+    font: 1.3em FontAwesome;
+    line-height: 1.6em;
+    position: absolute;
+    left: 0
+}
+
+.container .mid-col .mid-col-container #content article .meta .categories::before,
+.container .mid-col .mid-col-container #content article .meta .comments::before
+ {
+    color: #999;
+    position: relative;
+    margin-right: 10px
+}
+
+.archives article {
+    margin-left: 100px;
+}
+
+article .single-meta span {
+    margin-left: 20px;
+}
+
+article .single-meta .date,
+article .single-meta .tags,
+article .single-meta .categories
+ {
+    padding-left: 20px;
+    position: relative;
+}
+
+article .single-meta .date:before,
+article .single-meta .tags:before,
+article .single-meta .categories:before
+{
+    color: #ccc;
+    font: 1.3em FontAwesome;
+    line-height: 1.6em;
+    position: absolute;
+    left: 0;
+}
+
+article .single-meta .date:before {
+    content: "\f073"
+}
+
+article .single-meta .tags:before {
+    content: "\f02c"
+}
+
+article .single-meta .categories:before {
+    content: "\f07b"
+}
